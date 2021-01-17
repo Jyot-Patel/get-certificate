@@ -1,0 +1,13 @@
+.alert{
+    margin: 2rem;
+    color:#a52a2a
+}
+body{
+    text-align: center;
+}
+
+input{
+    width:45%;
+    height:2rem;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Certificate!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div id="formDiv">
+        <h1 class="alert">Enter your name</h1>
+        <form id="form">
+            <input type="text" name="name" placeholder="Enter your name" id="name">
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+    <div class="ss" hidden>
+        <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+        <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+        <button style="margin:2rem;" id="btn">Download Certificate as Image</button>
+
+        <script>
+            document.querySelector('#btn').addEventListener('click', function() {
+            html2canvas(document.querySelector('.asdf'), {
+            onrendered: function(canvas) {
+                // document.body.appendChild(canvas);
+              return Canvas2Image.saveAsPNG(canvas);
+            }
+        });
+    });
+        </script>
+    </div>
+
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
