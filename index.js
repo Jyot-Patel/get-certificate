@@ -26,6 +26,9 @@ $('#form').submit(function (e) {
     +'<br>'+'<br>'
     +'<span style = "font-size:30px" > My Course </span>'+'<br><br>'
     +'<span style = "font-size:20px" > with score of'+'<b> 100 % </b>'+'</span >'
+    +'<br><br><span style="font-size:25px"><i>'+today+'</i></span><br>'
+    +'<img src="https://upload.wikimedia.org/wikipedia/en/9/9c/Salman_Khan_Official_Signature.jpg" style="height:150px;width:250px;float:right;margin-right:2rem;margin-top:2rem;" alt="Signature">'
+    
     +'</div>'+'</div>'+'</center>';
 
     $('body').prepend(html);
