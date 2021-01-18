@@ -15,7 +15,7 @@ $('#form').submit(function (e) {
 
     console.log(name);
 
-    const html = '<center>'+'<div class="asdf" style="width:800px; padding:20px; text-align:center; border: 10px solid #787878">'
+    const html = '<center>'+'<div class="asdf" style="width:800px;background-color:White; padding:20px; text-align:center; border: 10px solid #787878">'
     +'<div style = "width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #787878" >'
     +'<span style = "font-size:50px; font-weight:bold" >'+' Certificate of Completion</span>'
     +' <br>'+' <br>'
